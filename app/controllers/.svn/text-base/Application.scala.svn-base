@@ -1,0 +1,43 @@
+package controllers
+
+import play.api._
+import play.api.mvc._
+import securesocial.core._
+import securesocial.core.SocialUser
+import securesocial.core.java.BaseUserService
+
+
+
+
+object Application  extends Controller with securesocial.core.SecureSocial{
+
+ // def index = Action {
+    //   Future { SparkMLLibUtility.SparkMLLibExample }
+//    Ok(views.html.index(""))
+//  }
+
+  def home = Action {
+    Ok(views.html.home())
+  }
+  
+  
+  
+  def admin = SecuredAction { implicit request =>
+    Ok(views.html.admin(request.user))
+  }
+  
+    def busRealtime = SecuredAction { implicit request =>
+       Ok(views.html.realtime_bus(request.user))
+  }
+    
+  def openMemories = SecuredAction { implicit request =>
+       Ok(views.html.open_memories(request.user))
+  }
+ 
+    def openMemoriesHadoop = Action { implicit request =>
+      Ok(views.html.open_memories_hadoop())
+  }
+
+   
+}
+

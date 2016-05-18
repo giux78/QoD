@@ -1,0 +1,298 @@
+@(user: controllers.helper.MyUser)(implicit request: RequestHeader)
+@import controllers.helper.MyUser
+
+@admin_template("QOD", user){
+
+<div class="row">
+	<div class="col-lg-12">
+		<h1 class="page-header">
+			<button type="button" class="btn btn-primary btn-lg" id="run_query">Run Query</button>
+			<button type="button" class="btn btn-primary btn-lg" id="export_query">Export Query</button>
+			<button type="button" class="btn btn-primary btn-lg" id="save_dataset">Export Dataset</button>
+			<button type="button" class="btn btn-default btn-lg pull-right" id="add_dataset"><i class="fa fa-plus"></i></i> </button>
+		</h1>
+	</div>	<!-- /.col-lg-12 -->
+</div>
+<div class="row">
+	<div class="col-md-6">
+		<textarea style="font-family: Verdana, sans-serif; font-size: 30px;"
+			class="form-control" rows="9" id="query_area">select * from abitazioni</textarea>
+	</div>
+		<div class="col-md-6">
+                            <div id="q_tab" style="height: auto;max-height: 400px;overflow-x: hidden;"></div>
+                        <!--     <p class="text-muted text-center">Tags</p>
+                            <p id="q_tags">
+                                <span class="label label-primary">Primary</span>
+                            </p> --> 
+	</div>
+</div>
+<div class="row">
+	<div class="col-md-12">
+	                <section class="panel">
+                    <header class="panel-heading">
+                        Query Results
+                        <span class="tools pull-right">
+                            <a href="javascript:;" class="fa fa-chevron-down"></a>
+                            <a href="javascript:;" class="fa fa-cog"></a>
+                            <a href="javascript:;" class="fa fa-times"></a>
+                         </span>
+                    </header>
+                    <div class="panel-body" style="overflow-x: scroll;">
+		<table id="excelDataTable" class="table table-condensed table-hover general-table">
+		</table>
+		                    </div>
+                    </section>
+	</div>
+</div>
+
+  <div class="modal fade" id="modal_export">
+     <div class="modal-dialog">  
+                                <div class="modal-content" ">
+                                    <div class="modal-header">
+                                        <button aria-hidden="true" data-dismiss="modal" class="close" type="button">×</button>
+                                        <h4 class="modal-title">Export Query</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                    <p>Get the data from the query in json format as an array of objects by calling the URL below</p>
+                                        <form class="form-horizontal" role="form" id="f_export">
+                                                                <div class="form-group">
+                        		<div class="col-lg-12">
+                            <input id="q_url" class="form-control input-sm" id="disabledInput" type="text" name="http://localhost:9001/query/@user.id" placeholder="" disabled>
+                        </div>
+                    </div>
+
+                                            <div class="form-group">
+                                                                        <div class="form-group">
+                                               <div class="col-lg-12">
+                                <label class="col-lg-3 control-label">Name</label>
+                                <div class="col-lg-9">
+                                    <input type="text" class="form-control" id="export_name"></input>
+                                </div>
+                                </div>
+                            </div>
+                                               <div class="form-group">
+                                               <div class="col-lg-12">
+                                <label class="col-lg-3 control-label">Description</label>
+                                <div class="col-lg-9">
+                                    <textarea class="form-control" id="export_description" rows="3"></textarea>
+                                </div>
+                                </div>
+                            </div>
+                                                <div class="col-lg-offset-2 col-lg-10">
+                                                    <button type="submit" class="btn btn-default" id="b_export">Export</button>
+                                                </div>
+                                            </div>
+                                        </form>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                          </div>  
+
+ <div class="modal fade" id="modal_export_dataset">
+     <div class="modal-dialog">  
+                                <div class="modal-content" style="height:430px">
+                                    <div class="modal-header">
+                                        <button aria-hidden="true" data-dismiss="modal" class="close" type="button">×</button>
+                                        <h4 class="modal-title">Export Dataset</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                    <p>By Exporting this dataset your query will performs better and you can organize your dataset</p>
+                                        <form class="form-horizontal" role="form" id="f_export_dataset">
+                                                                <div class="form-group">
+                        		<div class="col-lg-12">
+                            <input id="q_url_query" class="form-control input-sm" id="disabledInput" type="text" name="http://localhost:9001/query/@user.id" placeholder="" disabled>
+                        </div>
+                    </div>
+                                                       <!--                <div class="form-group">
+                        		<div class="col-lg-12">
+                            <input id="q_url_dataset" class="form-control input-sm" id="disabledInput" type="text" name="/@user.id" placeholder="" disabled>
+                        </div> 
+                    </div> -->
+                                          
+                                          
+                                                                              <div class="form-group">
+                                               <div class="col-lg-12">
+                                <label class="col-lg-3 control-label">Name</label>
+                                <div class="col-lg-9">
+                                    <input type="text" class="form-control" id="export_dataset_name"></input>
+                                </div>
+                                </div>
+                            </div>
+                                               <div class="form-group">
+                                               <div class="col-lg-12">
+                                <label class="col-lg-3 control-label">Description</label>
+                                <div class="col-lg-9">
+                                    <textarea class="form-control" id="export_dataset_description" rows="3"></textarea>
+                                </div>
+                                </div>
+                            </div>
+                          
+                           <div class="form-group">
+                                <div class="col-lg-12">
+                                <label class="col-lg-3 control-label">Query</label>
+                                <div class="col-lg-9">
+                                    <textarea class="form-control" id="export_dataset_query" rows="3" disabled></textarea>
+                                </div>
+                                </div>
+                            </div>
+
+                                                <div class="col-lg-offset-2 col-lg-10">
+                                                    <button type="submit" class="btn btn-default" id="b_export_dataset">Export</button>
+                                                </div>
+                                          
+                                        </form>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                          </div>  
+                          
+                          
+              <div class="modal fade" id="modal_add_dataset">
+                 <div class="modal-dialog">  
+                                <div class="modal-content" >
+                                    <div class="modal-header">
+                                        <button aria-hidden="true" data-dismiss="modal" class="close" type="button">×</button>
+                                        <h4 class="modal-title">Add dataset</h4>
+                                    </div>
+                                    <div class="modal-body">             
+                          
+                          <section class="panel">
+
+                    <div class="panel-body">
+                       <form id="datafile" enctype="multipart/form-data"> 
+                
+                        <div id="wizard">
+                            <h2>First Step</h2>
+
+                            <section>
+                            <div class="alert alert-danger" style="display: none" id="alert_step1" role="alert">Sorry, you must accept terms and conditions</div>
+                            <h3>Terms and Conditions</h3>
+                                <form class="form-horizontal" style="margin-top: 20px">
+                                    <div class="form-group">                            
+                                        <div class="col-lg-12" >
+                                            <a href="#" class="btn btn-lg btn-info">Read Terms & Conditions</a>
+                                        </div>
+                                    </div>
+                                        <div class="form-group">
+                                        <div class="col-lg-12">
+                                           <label style="margin-left: 5px;">   <input id="term_cond" type="checkbox"> I have read and agree to the Terms & Conditions.</label>
+                                        </div>
+                                        </div>
+                                    </form>
+                            </section>
+
+                            <h2>Second Step</h2>
+                            <section>
+                            <div class="alert alert-danger"  style="display: none" id="alert_step2" role="alert">Name and Description are mandatory</div>
+                            <h3>Dataset Name and Description</h3>
+                                <form class="form-horizontal">
+                                    <div class="form-group">
+                                        <label class="col-lg-2 control-label">Name</label>
+                                        <div class="col-lg-8">
+                                            <input type="text" class="form-control" id="add_dataset_name" name="name" placeholder="Name">
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="form-group">
+                                               
+                                <label class="col-lg-2 control-label">Description</label>
+                                <div class="col-lg-8">
+                                    <textarea class="form-control" name="desc" id="add_dataset_description" rows="3"></textarea>
+                                </div>
+                                 <input type="hidden" value="@user.id" id="m_userId">             
+                            </div>
+                               </form>
+                            </section>
+
+                            <h2>Third Step</h2>
+                            <section>
+                            <div class="alert alert-info" role="alert">File to upload must contain a JSON per LINE with the same schema 
+                                 <br> for example <br>
+                                 {"name" : "Alessandro", "email" : "ale@@gmail.com" } <br>
+                                 {"name" : "Silvia", "email" : "silvia@@gmail.com" }
+                                  ....
+                            </div>
+                            <h3>Upload Dataset</h3>
+                                <form class="form-horizontal">
+                                    <div class="form-group">
+                                        <label class="col-lg-2 control-label">Upload File</label>
+                                        <div class="col-lg-8">
+                                            <input id="datasetfile" name="datasetfile" type="file" />
+                                        </div>
+                                    </div>
+                                    
+                                </form>
+                            </section>
+
+                            <h2>Final Step</h2>
+                            <section>
+                            <h3>Upload Dataset</h3>
+                                <p>Congratulations This is the Final Step</p>
+                            </section>
+                        </div>
+                       </form> 
+                    </div>
+                </section>
+                                    </div>
+
+                                </div>
+                            </div>
+                          </div> 
+
+
+
+
+
+
+
+            <div class="modal fade" id="modal_dataset">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title" id="m_title"></h4>
+      </div>
+      <div class="modal-body">
+
+                            <h3>Categoria   : <span id="m_categoria"></span></h3>
+                            <h3>Descrizione : <span id="m_desc"></span></h3>
+                            <h3>Tabelle     :</h3>
+                            <div id="m_tab"></div>
+                            <p class="text-muted text-center">Tags</p>
+                            <p id="m_tags">
+                                <span class="label label-primary">Primary</span>
+                            </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Info Dataset</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+ <div class="modal fade" id="modal_parametric">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title">Parametric Query</h4>
+      </div>
+      <div class="modal-body">
+        <p>Having inserted a parameter this query can only accessed by clicking 
+           to the export button and calling the genereted URL from a http GET followed by parameters and values as in the example below</p>
+        <p>After exporting the query the data can be access by calling the genereted URL followed by the ?name=value&name=value</p>
+        <h6>http://localhost:9001/query/543877899080244/eabd8e1ce07e4a2a8a25adc39c98244f</h6>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary" id="modal_export_parametric">Export Query</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+}

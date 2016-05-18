@@ -1,0 +1,135 @@
+$(document).ready(function() {
+	
+
+	$('#run_query').click( function(){
+		var myData = {}
+		$('#excelDataTable').empty();
+		var query = $("#query_area").val()
+		var dataset = ""
+	    myData.query = query
+	    myData.dataset_name = dataset
+		$.ajax({
+			url: './run_sql',
+			dataType: 'json',
+			async: true,
+		    data: JSON.stringify(myData),
+		//	data: myData,
+		    type: "POST",
+		    contentType:'application/json',
+			success: function(data) {
+               console.log(data)
+               if(data.query){
+            	   $('#modal_parametric').modal('show')
+               } else {
+                 buildHtmlTable(data)
+               }
+			},
+			error: function(data) {
+
+			}
+		});
+	})
+		
+	$('#export_query').click(function(){
+		var uuid = 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c) {
+		    var r = Math.random()*16|0, v = c == 'x' ? r : (r&0x3|0x8);
+		    return v.toString(16);
+		});
+		uuid = uuid.replace(/-/g,"")
+		var placeholder = $("#q_url").attr('name');
+		var query = $("#query_area").val()
+		var queryString = ""
+		if(query.indexOf('#') > -1){
+			var queryArray = query.split(" ")
+			var parameters = queryArray.filter(function(elem){
+				return (elem.substring( 0, "#".length ) === "#")	
+			})
+
+            for(var i in parameters){
+            	var par = parameters[i].replace('#',"")
+            if(i == 0){
+            	queryString += "?" + par + "=valore" 
+            } else{
+            	queryString +="&" + par + "=valore" 
+            }
+				
+		}
+
+		}
+		$("#q_url").attr('placeholder', placeholder + "/" + uuid + queryString);
+	    $('#modal_export').modal('show')
+	})
+	
+$( "#b_export" ).click(function( ) {
+	var prova = $( "#f_export" ).serialize()
+	var placeholder = $("#q_url").attr('placeholder');
+	var description = $("#export_description").val()
+	var query = $("#query_area").val()
+	var type = 'normal'
+    if(query.indexOf('#') > -1){
+    	type = 'parametric'
+    }
+	console.log(description + " " + placeholder)
+	var myData = {}
+    myData.placeholder = placeholder
+    myData.description = description
+    myData.query = query
+    myData.type = type
+	$.ajax({
+		url: './export_query',
+		dataType: 'json',
+		async: true,
+	    data: JSON.stringify(myData),
+	//	data: myData,
+	    type: "POST",
+	    contentType:'application/json',
+		success: function(data) {
+		    $('#modal_export').modal('hide')
+		},
+		error: function(data) {
+			$('#modal_export').modal('hide')
+		}
+	});
+	
+});
+	
+	
+	function buildHtmlTable(myList) {
+		
+	    var columns = addAllColumnHeaders(myList);
+
+	    for (var i = 0 ; i < myList.length ; i++) {
+	        var row$ = $('<tr/>');
+	        for (var colIndex = 0 ; colIndex < columns.length ; colIndex++) {
+	            var cellValue = myList[i][columns[colIndex]];
+
+	            if (cellValue == null) { cellValue = ""; }
+
+	            row$.append($('<td/>').html(cellValue));
+	        }
+	        $("#excelDataTable").append(row$);
+	    }
+	}
+
+	// Adds a header row to the table and returns the set of columns.
+	// Need to do union of keys from all records as some records may not contain
+	// all records
+	function addAllColumnHeaders(myList)
+	{
+	    var columnSet = [];
+	    var headerTr$ = $('<tr/>');
+
+	    for (var i = 0 ; i < myList.length ; i++) {
+	        var rowHash = myList[i];
+	        for (var key in rowHash) {
+	            if ($.inArray(key, columnSet) == -1){
+	                columnSet.push(key);
+	                headerTr$.append($('<th/>').html(key));
+	            }
+	        }
+	    }
+	    $("#excelDataTable").append(headerTr$);
+
+	    return columnSet
+	}
+})

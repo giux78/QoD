@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/286/trunk/applications/firstSparkApp/app/views
+END
+index_or.scala.html
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/286/trunk/applications/firstSparkApp/app/views/index_or.scala.html
+END
+open_memories_hadoop.scala.html
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/!svn/ver/286/trunk/applications/firstSparkApp/app/views/open_memories_hadoop.scala.html
+END
+admin.scala.html
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/286/trunk/applications/firstSparkApp/app/views/admin.scala.html
+END
+home.scala.html
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/286/trunk/applications/firstSparkApp/app/views/home.scala.html
+END
+realtime_template.scala.html
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/!svn/ver/286/trunk/applications/firstSparkApp/app/views/realtime_template.scala.html
+END
+realtime_bus.scala.html
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/286/trunk/applications/firstSparkApp/app/views/realtime_bus.scala.html
+END
+admin_template.scala.html
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/!svn/ver/286/trunk/applications/firstSparkApp/app/views/admin_template.scala.html
+END
+home_template.scala.html
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/286/trunk/applications/firstSparkApp/app/views/home_template.scala.html
+END
+main.scala.html
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/286/trunk/applications/firstSparkApp/app/views/main.scala.html
+END
+open_memories_hadoop_template.scala.html
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/!svn/ver/286/trunk/applications/firstSparkApp/app/views/open_memories_hadoop_template.scala.html
+END
+chatRoom.scala.js
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/286/trunk/applications/firstSparkApp/app/views/chatRoom.scala.js
+END
+open_memories_template.scala.html
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/!svn/ver/286/trunk/applications/firstSparkApp/app/views/open_memories_template.scala.html
+END
+open_memories.scala.html
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/286/trunk/applications/firstSparkApp/app/views/open_memories.scala.html
+END

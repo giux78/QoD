@@ -1,0 +1,315 @@
+@(title: String, user:controllers.helper.MyUser)
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="ThemeBucket">
+    <link rel="shortcut icon" href="images/favicon.png">
+    <title>BucketAdmin</title>
+    <!--Core CSS -->
+    <link href="@routes.Assets.at("admin_template/bs3/css/bootstrap.min.css")" rel="stylesheet">
+    <link href="@routes.Assets.at("admin_template/js/jquery-ui/jquery-ui-1.10.1.custom.min.css")" rel="stylesheet">
+    <link href="@routes.Assets.at("admin_template/css/bootstrap-reset.css")" rel="stylesheet">
+    <link href="@routes.Assets.at("admin/font-awesome-4.1.0/css/font-awesome.css")" rel="stylesheet">
+    <link href="@routes.Assets.at("admin_template/js/jvector-map/jquery-jvectormap-1.2.2.css")" rel="stylesheet">
+    <link href="@routes.Assets.at("admin_template/css/clndr.css")" rel="stylesheet">
+    <!--clock css-->
+    <link href="@routes.Assets.at("admin_template/js/css3clock/css/style.css")" rel="stylesheet">
+    <!--Morris Chart CSS -->
+    <link rel="stylesheet" href="@routes.Assets.at("admin_template/js/morris-chart/morris.css")">
+    <!-- Custom styles for this template -->
+    <link href="@routes.Assets.at("admin_template/css/style.css")" rel="stylesheet">
+    <link href="@routes.Assets.at("admin_template/css/style-responsive.css")" rel="stylesheet"/>
+    <!-- Just for debugging purposes. Don't actually copy this line! -->
+    <!--[if lt IE 9]>
+    <script src="@routes.Assets.at("admin_template/js/ie8-responsive-file-warning.js")"></script><![endif]-->
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+
+</head>
+<body>
+<section id="container">
+<!--header start-->
+<header class="header fixed-top clearfix">
+<!--logo start-->
+<div class="brand">
+
+    <a href="index.html" class="logo">
+       <h4>Sanity Check</h4>
+     <!--     <img src="images/logo.png" alt="">-->
+    </a>
+    <div class="sidebar-toggle-box">
+        <div class="fa fa-bars"></div>
+    </div>
+</div>
+<!--logo end-->
+
+<div class="top-nav clearfix">
+    <!--search & user info start-->
+    <ul class="nav pull-right top-menu">
+        <li>
+            <input type="text" class="form-control search" placeholder=" Search">
+        </li>
+        <!-- user login dropdown start-->
+        <li class="dropdown">
+            <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                <img alt="" src="@user.avatar">
+                <span class="username">@user.name @user.surname</span>
+                <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu extended logout">
+                <li><a href="#"><i class=" fa fa-suitcase"></i>Profile</a></li>
+                <li><a href="#"><i class=" fa fa-question"></i>My Query</a></li>
+                <li><a href="#"><i class=" fa fa-cloud"></i>My Dataset</a></li>
+                <li><a href="#"><i class="fa fa-cog"></i> Settings</a></li>
+                <li><a href="login.html"><i class="fa fa-key"></i> Log Out</a></li>
+            </ul>
+        </li>
+        <!-- user login dropdown end -->
+        <li>
+            <div class="toggle-right-box">
+                <div class="fa fa-bars"></div>
+            </div>
+        </li>
+    </ul>
+    <!--search & user info end-->
+</div>
+</header>
+<!--header end-->
+<!--sidebar start-->
+<aside>
+    <div id="sidebar" class="nav-collapse">
+        <!-- sidebar menu start-->
+        <div class="leftside-navigation">
+             <ul class="sidebar-menu" id="nav-accordion">
+                  <li>
+                        <a href="#"><i class="fa fa-database fa-fw"></i> Trentino dataset<span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level" id="tr_dataset" style="height: auto;max-height: 500px;overflow-x: hidden;">
+
+                        </ul>
+                        <!-- /.nav-second-level -->
+                    </li>
+                                 <li class="sub-menu">
+                <a href="javascript:;" >
+                    <i class="fa fa-database"></i>
+                    <span>Personal Dataset</span>
+                </a>
+                        <ul class="sub" id="mydataset_2" style="height: auto;max-height: 500px;overflow-x: hidden;">
+    
+                        </ul>
+                    </a>
+                </li>
+
+                                <li class="sub-menu">
+                <a href="javascript:;" >
+                    <i class="fa fa-bar-chart-o"></i>
+                    <span>Charts </span>
+                </a>
+                        <ul class="sub" id="trentino_chart" style="height: auto;max-height: 500px;overflow-x: hidden;">
+    
+                        </ul>
+                    </a>
+                </li>
+                <li>
+                      <a href="/open_memories"><i class="fa fa-history fa-fw"></i>Open Memory<span class="fa arrow"></span></a>
+                      <!-- /.nav-second-level -->
+                  </li>
+
+                                <li>
+                      <a href="/myquery"><i class="fa fa-question fa-fw"></i>My Query<span class="fa arrow"></span></a>
+                      <!-- /.nav-second-level -->
+                  </li>
+                                                  <li>
+                      <a href="/mydataset"><i class="fa fa-cloud fa-fw"></i>My Dataset<span class="fa arrow"></span></a>
+                      <!-- /.nav-second-level -->
+                  </li>
+                                  <li>
+                    <a  href="#">
+                        <i class="fa fa-dashboard"></i>
+                        <span>Realtime Dataset</span>
+                        <ul class="nav nav-second-level" id="realtime_dataset">
+                                 <li><a href="/bus_realtime">Autobus</a></li>
+                        </ul>
+                    </a>
+                </li>
+            </ul>             </div>
+        <!-- sidebar menu end-->
+    </div>
+</aside>
+<!--sidebar end-->
+<!--main content start-->
+<section id="main-content">
+<section class="wrapper">
+<input type="hidden" value="@user.id" id="m_userId"> 
+<h2>Sanity Check</h2>
+<hr class="divider">
+
+
+<div id="mySanity" class="row">
+ <section class="panel">
+                <header class="panel-heading tab-bg-dark-navy-blue ">
+                    <ul class="nav nav-tabs">
+                        <li class="active">
+                            <a data-toggle="tab" href="#home">Ultimo Aggiornamento</a>
+                        </li>
+                        <li class="">
+                            <a data-toggle="tab" href="#about">Data Creazione Risorsa</a>
+                        </li>
+                        <li class="">
+                            <a data-toggle="tab" href="#profile">Senza Categoria</a>
+                        </li>
+                        <li class="">
+                            <a data-toggle="tab" href="#contact">Broken Links</a>
+                        </li>
+                    </ul>
+                </header>
+                <div class="panel-body">
+                    <div class="tab-content">
+                        <div id="home" class="tab-pane active">
+                         <div class="row">
+            <div class="col-sm-12">
+                <section class="panel">
+                    <header class="panel-heading">
+                        Dataset non aggiornati secondo data di Aggiornamento
+                        <span class="tools pull-right">
+                            <a href="javascript:;" class="fa fa-chevron-down"></a>
+                            <a href="javascript:;" class="fa fa-cog"></a>
+                            <a href="javascript:;" class="fa fa-times"></a>
+                         </span>
+                    </header>
+                    <div class="panel-body">
+                        <table class="table  table-hover general-table">
+                            <thead>
+                            <tr>
+                                <th> Dataset</th>
+                                <th>Data creazione</th>
+                                <th>Aggiornamento</th>
+                                <th>Scaduta</th>
+                            </tr>
+                            </thead>
+                            <tbody id="body_agg">
+ 
+                         
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+            </div>
+        </div>
+                        </div>
+                        <div id="about" class="tab-pane">
+                         <div class="row">
+            <div class="col-sm-12">
+                <section class="panel">
+                    <header class="panel-heading">
+                        Dataset non aggiornati secondo data di creazione/modifica risorsa
+                        <span class="tools pull-right">
+                            <a href="javascript:;" class="fa fa-chevron-down"></a>
+                            <a href="javascript:;" class="fa fa-cog"></a>
+                            <a href="javascript:;" class="fa fa-times"></a>
+                         </span>
+                    </header>
+                    <div class="panel-body">
+                        <table class="table  table-hover general-table">
+                            <thead>
+                            <tr>
+                                <th> Dataset</th>
+                                <th>Data creazione</th>
+                                <th>Aggiornamento</th>
+                                <th>Scaduta</th>
+                            </tr>
+                            </thead>
+                            <tbody id="body_res">
+ 
+                         
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+            </div>
+        </div>
+                        
+                        
+                        </div>
+                        <div id="profile" class="tab-pane">
+                                                 <div class="row">
+            <div class="col-sm-12">
+                <section class="panel">
+                    <header class="panel-heading">
+                        Dataset non associati ad alcuna categoria
+                        <span class="tools pull-right">
+                            <a href="javascript:;" class="fa fa-chevron-down"></a>
+                            <a href="javascript:;" class="fa fa-cog"></a>
+                            <a href="javascript:;" class="fa fa-times"></a>
+                         </span>
+                    </header>
+                    <div class="panel-body">
+                        <table class="table  table-hover general-table">
+                            <thead>
+                            <tr>
+                                <th> Dataset</th>
+   
+                            </tr>
+                            </thead>
+                            <tbody id="body_cat">
+ 
+                         
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+            </div>
+        </div>
+                        
+                        </div>
+                        <div id="contact" class="tab-pane">Contact</div>
+                    </div>
+                </div>
+            </section>
+</div>
+</section>
+</section>
+<!--main content end-->
+
+</section>
+
+<input type="hidden" name="userid" id="userid" value="@user.id"/>
+<!-- Placed js at the end of the document so the pages load faster -->
+<!--Core js-->
+<script src="@routes.Assets.at("admin_template/js/jquery.js")"></script>
+<script src="@routes.Assets.at("admin_template/js/jquery-ui/jquery-ui-1.10.1.custom.min.js")"></script>
+<script src="@routes.Assets.at("admin_template/bs3/js/bootstrap.min.js")"></script>
+<script src="@routes.Assets.at("admin_template/js/jquery.dcjqaccordion.2.7.js")"></script>
+<script src="@routes.Assets.at("admin_template/js/jquery.scrollTo.min.js")"></script>
+<script src="@routes.Assets.at("admin_template/js/jQuery-slimScroll-1.3.0/jquery.slimscroll.js")"></script>
+<script src="@routes.Assets.at("admin_template/js/jquery.nicescroll.js")"></script>
+<!--[if lte IE 8]><script language="javascript" type="text/javascript" src="js/flot-chart/excanvas.min.js"></script><![endif]-->
+<script src="@routes.Assets.at("admin_template/js/skycons/skycons.js")"></script>
+<script src="@routes.Assets.at("admin_template/js/jquery.scrollTo/jquery.scrollTo.js")"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+<script src="@routes.Assets.at("admin_template/js/calendar/clndr.js")"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.5.2/underscore-min.js"></script>
+
+
+<script src="@routes.Assets.at("admin_template/js/dashboard.js")"></script>
+<script src="@routes.Assets.at("admin_template/js/jquery.customSelect.min.js")" ></script>
+<!--common script init for all pages-->
+<script src="@routes.Assets.at("admin_template/js/scripts.js")"></script>
+<script src="@routes.Assets.at("admin/js/common.js")"></script>
+<script src="@routes.Assets.at("admin/js/sanity_check.js")"></script>
+
+
+
+<script type="text/javascript" charset="utf-8" src="@routes.RealtimeController.chatRoomJs(user.id)"></script>
+
+<!--script for this page-->
+</body>
+</html>
+
+

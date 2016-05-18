@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/286/trunk/applications/firstSparkApp/public/admin_template/js/ckeditor
+END
+CHANGES.md
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/!svn/ver/286/trunk/applications/firstSparkApp/public/admin_template/js/ckeditor/CHANGES.md
+END
+ckeditor.js
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/!svn/ver/286/trunk/applications/firstSparkApp/public/admin_template/js/ckeditor/ckeditor.js
+END
+LICENSE.md
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/!svn/ver/286/trunk/applications/firstSparkApp/public/admin_template/js/ckeditor/LICENSE.md
+END
+config.js
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/!svn/ver/286/trunk/applications/firstSparkApp/public/admin_template/js/ckeditor/config.js
+END
+styles.js
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/!svn/ver/286/trunk/applications/firstSparkApp/public/admin_template/js/ckeditor/styles.js
+END
+build-config.js
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/!svn/ver/286/trunk/applications/firstSparkApp/public/admin_template/js/ckeditor/build-config.js
+END
+README.md
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/!svn/ver/286/trunk/applications/firstSparkApp/public/admin_template/js/ckeditor/README.md
+END
+contents.css
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/!svn/ver/286/trunk/applications/firstSparkApp/public/admin_template/js/ckeditor/contents.css
+END

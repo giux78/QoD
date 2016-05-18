@@ -1,0 +1,353 @@
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/!svn/ver/286/trunk/applications/firstSparkApp/public/admin_template/js/select2
+END
+select2.jquery.json
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/!svn/ver/286/trunk/applications/firstSparkApp/public/admin_template/js/select2/select2.jquery.json
+END
+select2_locale_id.js
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/!svn/ver/286/trunk/applications/firstSparkApp/public/admin_template/js/select2/select2_locale_id.js
+END
+select2.js
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/!svn/ver/286/trunk/applications/firstSparkApp/public/admin_template/js/select2/select2.js
+END
+select2_locale_th.js
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/!svn/ver/286/trunk/applications/firstSparkApp/public/admin_template/js/select2/select2_locale_th.js
+END
+select2_locale_zh-CN.js
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/!svn/ver/286/trunk/applications/firstSparkApp/public/admin_template/js/select2/select2_locale_zh-CN.js
+END
+select2.css
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/!svn/ver/286/trunk/applications/firstSparkApp/public/admin_template/js/select2/select2.css
+END
+select2_locale_cs.js
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/!svn/ver/286/trunk/applications/firstSparkApp/public/admin_template/js/select2/select2_locale_cs.js
+END
+select2_locale_eu.js
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/!svn/ver/286/trunk/applications/firstSparkApp/public/admin_template/js/select2/select2_locale_eu.js
+END
+select2_locale_es.js
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/!svn/ver/286/trunk/applications/firstSparkApp/public/admin_template/js/select2/select2_locale_es.js
+END
+select2_locale_hu.js
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/!svn/ver/286/trunk/applications/firstSparkApp/public/admin_template/js/select2/select2_locale_hu.js
+END
+package.json
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/!svn/ver/286/trunk/applications/firstSparkApp/public/admin_template/js/select2/package.json
+END
+select2_locale_is.js
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/!svn/ver/286/trunk/applications/firstSparkApp/public/admin_template/js/select2/select2_locale_is.js
+END
+select2_locale_ms.js
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/!svn/ver/286/trunk/applications/firstSparkApp/public/admin_template/js/select2/select2_locale_ms.js
+END
+select2_locale_bg.js
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/!svn/ver/286/trunk/applications/firstSparkApp/public/admin_template/js/select2/select2_locale_bg.js
+END
+README.md
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/!svn/ver/286/trunk/applications/firstSparkApp/public/admin_template/js/select2/README.md
+END
+select2_locale_ko.js
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/!svn/ver/286/trunk/applications/firstSparkApp/public/admin_template/js/select2/select2_locale_ko.js
+END
+select2-spinner.gif
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/!svn/ver/286/trunk/applications/firstSparkApp/public/admin_template/js/select2/select2-spinner.gif
+END
+select2_locale_fi.js
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/!svn/ver/286/trunk/applications/firstSparkApp/public/admin_template/js/select2/select2_locale_fi.js
+END
+select2_locale_ru.js
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/!svn/ver/286/trunk/applications/firstSparkApp/public/admin_template/js/select2/select2_locale_ru.js
+END
+select2_locale_de.js
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/!svn/ver/286/trunk/applications/firstSparkApp/public/admin_template/js/select2/select2_locale_de.js
+END
+select2_locale_no.js
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/!svn/ver/286/trunk/applications/firstSparkApp/public/admin_template/js/select2/select2_locale_no.js
+END
+select2_locale_pt-BR.js
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/!svn/ver/286/trunk/applications/firstSparkApp/public/admin_template/js/select2/select2_locale_pt-BR.js
+END
+select2_locale_rs.js
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/!svn/ver/286/trunk/applications/firstSparkApp/public/admin_template/js/select2/select2_locale_rs.js
+END
+release.sh
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/!svn/ver/286/trunk/applications/firstSparkApp/public/admin_template/js/select2/release.sh
+END
+select2_locale_ca.js
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/!svn/ver/286/trunk/applications/firstSparkApp/public/admin_template/js/select2/select2_locale_ca.js
+END
+select2_locale_mk.js
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/!svn/ver/286/trunk/applications/firstSparkApp/public/admin_template/js/select2/select2_locale_mk.js
+END
+select2_locale_da.js
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/!svn/ver/286/trunk/applications/firstSparkApp/public/admin_template/js/select2/select2_locale_da.js
+END
+select2_locale_he.js
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/!svn/ver/286/trunk/applications/firstSparkApp/public/admin_template/js/select2/select2_locale_he.js
+END
+select2_locale_ro.js
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/!svn/ver/286/trunk/applications/firstSparkApp/public/admin_template/js/select2/select2_locale_ro.js
+END
+select2_locale_fa.js
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/!svn/ver/286/trunk/applications/firstSparkApp/public/admin_template/js/select2/select2_locale_fa.js
+END
+LICENSE
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/!svn/ver/286/trunk/applications/firstSparkApp/public/admin_template/js/select2/LICENSE
+END
+select2_locale_sk.js
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/!svn/ver/286/trunk/applications/firstSparkApp/public/admin_template/js/select2/select2_locale_sk.js
+END
+select2_locale_ja.js
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/!svn/ver/286/trunk/applications/firstSparkApp/public/admin_template/js/select2/select2_locale_ja.js
+END
+select2_locale_ka.js
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/!svn/ver/286/trunk/applications/firstSparkApp/public/admin_template/js/select2/select2_locale_ka.js
+END
+select2_locale_uk.js
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/!svn/ver/286/trunk/applications/firstSparkApp/public/admin_template/js/select2/select2_locale_uk.js
+END
+select2_locale_pt-PT.js
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/!svn/ver/286/trunk/applications/firstSparkApp/public/admin_template/js/select2/select2_locale_pt-PT.js
+END
+select2_locale_vi.js
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/!svn/ver/286/trunk/applications/firstSparkApp/public/admin_template/js/select2/select2_locale_vi.js
+END
+select2_locale_ar.js
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/!svn/ver/286/trunk/applications/firstSparkApp/public/admin_template/js/select2/select2_locale_ar.js
+END
+select2x2.png
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/!svn/ver/286/trunk/applications/firstSparkApp/public/admin_template/js/select2/select2x2.png
+END
+select2-bootstrap.css
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/!svn/ver/286/trunk/applications/firstSparkApp/public/admin_template/js/select2/select2-bootstrap.css
+END
+select2_locale_et.js
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/!svn/ver/286/trunk/applications/firstSparkApp/public/admin_template/js/select2/select2_locale_et.js
+END
+select2_locale_fr.js
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/!svn/ver/286/trunk/applications/firstSparkApp/public/admin_template/js/select2/select2_locale_fr.js
+END
+select2_locale_it.js
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/!svn/ver/286/trunk/applications/firstSparkApp/public/admin_template/js/select2/select2_locale_it.js
+END
+select2.png
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/!svn/ver/286/trunk/applications/firstSparkApp/public/admin_template/js/select2/select2.png
+END
+select2_locale_hr.js
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/!svn/ver/286/trunk/applications/firstSparkApp/public/admin_template/js/select2/select2_locale_hr.js
+END
+select2_locale_lv.js
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/!svn/ver/286/trunk/applications/firstSparkApp/public/admin_template/js/select2/select2_locale_lv.js
+END
+select2_locale_zh-TW.js
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/!svn/ver/286/trunk/applications/firstSparkApp/public/admin_template/js/select2/select2_locale_zh-TW.js
+END
+select2_locale_lt.js
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/!svn/ver/286/trunk/applications/firstSparkApp/public/admin_template/js/select2/select2_locale_lt.js
+END
+select2_locale_el.js
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/!svn/ver/286/trunk/applications/firstSparkApp/public/admin_template/js/select2/select2_locale_el.js
+END
+composer.json
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/!svn/ver/286/trunk/applications/firstSparkApp/public/admin_template/js/select2/composer.json
+END
+select2_locale_en.js.template
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/!svn/ver/286/trunk/applications/firstSparkApp/public/admin_template/js/select2/select2_locale_en.js.template
+END
+select2_locale_gl.js
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/!svn/ver/286/trunk/applications/firstSparkApp/public/admin_template/js/select2/select2_locale_gl.js
+END
+select2_locale_sv.js
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/!svn/ver/286/trunk/applications/firstSparkApp/public/admin_template/js/select2/select2_locale_sv.js
+END
+component.json
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/!svn/ver/286/trunk/applications/firstSparkApp/public/admin_template/js/select2/component.json
+END
+select2_locale_nl.js
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/!svn/ver/286/trunk/applications/firstSparkApp/public/admin_template/js/select2/select2_locale_nl.js
+END
+select2_locale_tr.js
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/!svn/ver/286/trunk/applications/firstSparkApp/public/admin_template/js/select2/select2_locale_tr.js
+END
+bower.json
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/!svn/ver/286/trunk/applications/firstSparkApp/public/admin_template/js/select2/bower.json
+END
+select2_locale_pl.js
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/!svn/ver/286/trunk/applications/firstSparkApp/public/admin_template/js/select2/select2_locale_pl.js
+END

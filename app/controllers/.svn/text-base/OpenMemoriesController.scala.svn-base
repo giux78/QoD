@@ -1,0 +1,22 @@
+package controllers
+
+import play.api._
+import play.api.mvc._
+import com.mongodb.casbah.MongoClient
+import com.mongodb.casbah.commons.MongoDBObject
+
+object OpenMemoriesController extends Controller{
+  
+  
+  def openMemoriesDataset() = Action {
+    val mongoClient = MongoClient("localhost", 27017)
+    val db = mongoClient("open_memories")
+    val coll = db("dataset")
+    //  val queryObject = MongoDBObject()
+    val results = coll.find().toList
+    //  println(results.length)
+    mongoClient.close
+    val json = com.mongodb.util.JSON.serialize(results)
+    Ok(json)
+  }
+}

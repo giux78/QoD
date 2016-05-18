@@ -1,0 +1,69 @@
+package utils
+
+
+import play.api.libs.json.JsValue
+import play.api.libs.json.Json
+import org.apache.spark.SparkConf
+import org.apache.spark.SparkContext
+import org.apache.spark.sql.SQLContext
+import net.sf.jsqlparser.parser.CCJSqlParserUtil
+import net.sf.jsqlparser.statement.select.Select
+import net.sf.jsqlparser.util.TablesNamesFinder
+import scala.collection.JavaConversions._
+import net.sf.jsqlparser.parser.CCJSqlParserManager
+
+object QueryUtil {
+  
+  def runQuery(query :String) :List[JsValue] = {
+
+        val conf = new SparkConf(false) // skip loading external settings
+          .setMaster("local[2]") // run locally with enough threads
+          .setAppName("firstSparkApp")
+          .set("spark.logConf", "true")
+          .set("spark.driver.host", "localhost")
+
+        val sc = new SparkContext(conf)
+        val sqlContext = new SQLContext(sc)
+        import sqlContext._
+        val statement = CCJSqlParserUtil.parse(query);
+        val selectStatement = statement.asInstanceOf[Select];
+        val tablesNamesFinder = new TablesNamesFinder();
+        val tableList = tablesNamesFinder.getTableList(selectStatement);
+
+        tableList.foreach(x => {
+          println(x)
+          val path = "/Users/ale/Development/python/PrepareOpenData/prepare_json/spark/" + x + ".JSON"
+          //     println(path)
+          val loadedFile = sqlContext.jsonFile(path)
+          loadedFile.registerTempTable(x)
+          loadedFile.printSchema
+        })
+
+  //      val path = "/Users/ale/Development/python/PrepareOpenData/prepare_json/spark/POI___Trentino.JSON"
+  //      val poi = sqlContext.jsonFile(path)
+
+   //     val pathAbitazioni = "/Users/ale/Development/python/PrepareOpenData/prepare_json/spark/abitazioni.JSON"
+   //     val abitazioni = sqlContext.jsonFile(pathAbitazioni)
+
+        val test = sqlContext.sql(query)
+        test.foreach(println)
+        println(test.schemaString)
+        val schema = test.schema
+
+        val fields = schema.fieldNames
+        val zipped = test.map(x => {
+          val m = (fields zip x).toMap
+          val m2 = m.map( { case(x, null) => (x, "")
+                            case(x, y) => (x, y.toString)
+                         })
+          m2
+        })
+
+        val jsonList = zipped.collect.map(x => {
+          Json.toJson(x)
+        }).toList
+        sc.stop()
+        jsonList
+  }
+
+}

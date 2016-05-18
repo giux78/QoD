@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/!svn/ver/286/trunk/applications/firstSparkApp/public/admin_template/js/advanced-datatable/src/model
+END
+model.defaults.js
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/!svn/ver/286/trunk/applications/firstSparkApp/public/admin_template/js/advanced-datatable/src/model/model.defaults.js
+END
+model.defaults.columns.js
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/!svn/ver/286/trunk/applications/firstSparkApp/public/admin_template/js/advanced-datatable/src/model/model.defaults.columns.js
+END
+model.row.js
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/!svn/ver/286/trunk/applications/firstSparkApp/public/admin_template/js/advanced-datatable/src/model/model.row.js
+END
+model.search.js
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/!svn/ver/286/trunk/applications/firstSparkApp/public/admin_template/js/advanced-datatable/src/model/model.search.js
+END
+model.ext.js
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/!svn/ver/286/trunk/applications/firstSparkApp/public/admin_template/js/advanced-datatable/src/model/model.ext.js
+END
+model.column.js
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/!svn/ver/286/trunk/applications/firstSparkApp/public/admin_template/js/advanced-datatable/src/model/model.column.js
+END
+model.settings.js
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/!svn/ver/286/trunk/applications/firstSparkApp/public/admin_template/js/advanced-datatable/src/model/model.settings.js
+END

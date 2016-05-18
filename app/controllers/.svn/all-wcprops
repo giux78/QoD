@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/286/trunk/applications/firstSparkApp/app/controllers
+END
+Application.scala
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/286/trunk/applications/firstSparkApp/app/controllers/Application.scala
+END
+QueryController.scala
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/!svn/ver/286/trunk/applications/firstSparkApp/app/controllers/QueryController.scala
+END
+OpenMemoriesController.scala
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/!svn/ver/286/trunk/applications/firstSparkApp/app/controllers/OpenMemoriesController.scala
+END
+RealtimeController.scala
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/!svn/ver/286/trunk/applications/firstSparkApp/app/controllers/RealtimeController.scala
+END

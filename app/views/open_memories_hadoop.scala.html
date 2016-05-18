@@ -1,0 +1,117 @@
+@open_memories_hadoop_template("QOD"){
+
+        <div class="row">
+            <div class="col-md-12">
+                <section class="panel">
+                    <div class="panel-body profile-information">
+                       <div class="col-md-9">
+                           <div class="profile-desk">
+                               <h1 id="title">David Rojormillan</h1>
+                               <span class="text-muted" id="sub_title">Product Manager</span><br/>
+                               <p id="desc"> 
+                                     
+                               </p><br/>
+                          <!-- <p class="text-center" id="tags"> 
+                                     
+                               </p><br/> -->
+                               <p class="m-bot-none text-center" id="tags">
+ 								</p><br/> 
+                               
+                           </div>
+                       </div>
+                       <div class="col-md-3">
+                           <div class="profile-statistics">
+                               <h1>0</h1>
+                               <p>Download Ultima Settimana</p>
+                               <h1>0</h1>
+                               <p>Download Totali</p>
+                               <ul>
+                                   <li>
+                                       <a href="#">
+                                           <i class="fa fa-facebook"></i>
+                                       </a>
+                                   </li>
+                                   <li class="active">
+                                       <a href="#">
+                                           <i class="fa fa-twitter"></i>
+                                       </a>
+                                   </li>
+                                   <li>
+                                       <a href="#">
+                                           <i class="fa fa-google-plus"></i>
+                                       </a>
+                                   </li>
+                               </ul>
+                           </div>
+                       </div>
+                    </div>
+                </section>
+            </div>
+           </div> 
+           <div class="row">
+             <div class="col-md-12">
+                <h4>Dataset Associati :</h4>
+              </div>
+           </div>
+           <div class="row" id="resources">
+               
+           </div>
+
+
+  <div class="modal fade" id="modal_history">
+     <div class="modal-dialog">  
+                                <div class="modal-content" ">
+                                    <div class="modal-header">
+                                        <button aria-hidden="true" data-dismiss="modal" class="close" type="button">×</button>
+                                        <h4 class="modal-title" id="m_h_title"></h4>
+                                    </div>
+                                    <div class="modal-body">
+                               
+								    <div class="row">
+                                      <div class="col-md-12">
+                                        <div class="timeline-messages" style="height: auto;max-height: 500px;overflow-x: hidden;">
+                                            <h3>Timeline dataset</h3>
+                                            <div id="timeline">
+
+                                           </div> 
+                                         </div>
+                                        </div>
+                                      </div>                                      
+                                    </div>
+                                       <div class="modal-footer">
+       										 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        									 <a href="" id="downloadZip" class="btn btn-primary">Download Zip</a>
+      									</div>
+                                </div>
+                            </div>
+                          </div>  
+
+
+
+
+            <div class="modal fade" id="modal_dataset">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title" id="m_title"></h4>
+      </div>
+      <div class="modal-body">
+
+                            <h3>Categoria   : <span id="m_categoria"></span></h3>
+                            <h3>Descrizione : <span id="m_desc"></span></h3>
+                            <h3>Tabelle     :</h3>
+                            <div id="m_tab"></div>
+                            <p class="text-muted text-center">Tags</p>
+                            <p id="m_tags">
+                                <span class="label label-primary">Primary</span>
+                            </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Info Dataset</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+}

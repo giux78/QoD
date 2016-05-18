@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/286/trunk/applications/firstSparkApp/app/service
+END
+MyEventListener.scala
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/286/trunk/applications/firstSparkApp/app/service/MyEventListener.scala
+END
+InMemoryUserService.scala
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/!svn/ver/286/trunk/applications/firstSparkApp/app/service/InMemoryUserService.scala
+END

@@ -1,0 +1,120 @@
+@(user: securesocial.core.Identity)(implicit request: RequestHeader)
+@import securesocial.core.IdentityProvider
+
+@realtime_template("QOD", user){
+<div class="row">
+	<div class="col-lg-12">
+		<h3 class="page-header">
+			Ritardo degli autobus in tempo reale
+		</h3>
+	</div>	<!-- /.col-lg-12 -->
+</div>
+<div class="row">
+                <div class="col-sm-12">
+                    <section class="panel">
+                        <header class="panel-heading">
+                            Real Time Chart
+                        <span class="tools pull-right">
+                            <a href="javascript:;" class="fa fa-chevron-down"></a>
+                            <a href="javascript:;" class="fa fa-cog"></a>
+                            <a href="javascript:;" class="fa fa-times"></a>
+                         </span>
+                        </header>
+                        <div class="panel-body">
+                            <div id="reatltime-chart">
+                                <div id="reatltime-chartContainer" style="width:100%;height:300px; text-align: center; margin:0 auto;">
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+<div class="row">
+                <div class="col-sm-12">
+                    <section class="panel">
+                        <header class="panel-heading">
+                            Real Time Chart
+                        <span class="tools pull-right">
+                            <a href="javascript:;" class="fa fa-chevron-down"></a>
+                            <a href="javascript:;" class="fa fa-cog"></a>
+                            <a href="javascript:;" class="fa fa-times"></a>
+                         </span>
+                        </header>
+                        <div class="panel-body">
+                            <div id="reatltime-chart_me">
+                                <div id="reatltime-chartContainer_me" style="width:100%;height:300px; text-align: center; margin:0 auto;">
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+
+<div class="row">
+	<div class="col-md-12">
+	                <section class="panel">
+                    <header class="panel-heading">
+                        Query Results
+                        <span class="tools pull-right">
+                            <a href="javascript:;" class="fa fa-chevron-down"></a>
+                            <a href="javascript:;" class="fa fa-cog"></a>
+                            <a href="javascript:;" class="fa fa-times"></a>
+                         </span>
+                    </header>
+                    <div class="panel-body">
+		                            <div id="attivi_chart_div">
+                                <div id="attivi_chart" style="width:100%;height:300px; text-align: center; margin:0 auto;">
+                                </div>
+                            </div>
+		                    </div>
+                    </section>
+	</div>
+</div>
+<div class="row">
+	<div class="col-md-12">
+	                <section class="panel">
+                    <header class="panel-heading">
+                        Query Results
+                        <span class="tools pull-right">
+                            <a href="javascript:;" class="fa fa-chevron-down"></a>
+                            <a href="javascript:;" class="fa fa-cog"></a>
+                            <a href="javascript:;" class="fa fa-times"></a>
+                         </span>
+                    </header>
+                    <div class="panel-body">
+		                            <div id="all_chart_div">
+                                <div id="all_chart" style="width:100%;height:400px; text-align: center; margin:0 auto;">
+                                </div>
+                            </div>
+		                    </div>
+                    </section>
+	</div>
+</div>
+
+ <div class="modal fade" id="modal_dataset">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title" id="m_title"></h4>
+      </div>
+      <div class="modal-body">
+
+                            <h3>Categoria   : <span id="m_categoria"></span></h3>
+                            <h3>Descrizione : <span id="m_desc"></span></h3>
+                            <h3>Tabelle     :</h3>
+                            <div id="m_tab"></div>
+                            <p class="text-muted text-center">Tags</p>
+                            <p id="m_tags">
+                                <span class="label label-primary">Primary</span>
+                            </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Info Dataset</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+}

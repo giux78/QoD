@@ -1,0 +1,57 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+# Home page
+#GET     /                           controllers.Application.index
+GET    /home                             controllers.Application.home
+GET    /admin                            controllers.Application.admin
+GET    /bus_realtime                     controllers.Application.busRealtime
+GET    /open_memories                    controllers.Application.openMemories
+GET    /open_memories_hadoop             controllers.Application.openMemoriesHadoop
+
+
+# Login page
+GET    /login                            securesocial.controllers.LoginPage.login
+GET    /logout                           securesocial.controllers.LoginPage.logout
+
+# User Registration and password handling 
+GET    /signup                           securesocial.controllers.Registration.startSignUp
+POST   /signup                           securesocial.controllers.Registration.handleStartSignUp
+GET    /signup/:token                    securesocial.controllers.Registration.signUp(token)
+POST   /signup/:token                    securesocial.controllers.Registration.handleSignUp(token)
+GET    /reset                            securesocial.controllers.Registration.startResetPassword
+POST   /reset                            securesocial.controllers.Registration.handleStartResetPassword
+GET    /reset/:token                     securesocial.controllers.Registration.resetPassword(token)
+POST   /reset/:token                     securesocial.controllers.Registration.handleResetPassword(token)
+GET    /password                         securesocial.controllers.PasswordChange.page
+POST   /password                         securesocial.controllers.PasswordChange.handlePasswordChange
+
+# Providers entry points
+GET    /authenticate/:provider           securesocial.controllers.ProviderController.authenticate(provider)
+POST   /authenticate/:provider           securesocial.controllers.ProviderController.authenticateByPost(provider)
+GET    /not-authorized                   securesocial.controllers.ProviderController.notAuthorized
+
+# Query
+POST   /run_sql                          controllers.QueryController.runSql()
+GET    /datasets                         controllers.QueryController.datasets()
+GET    /schema/:tableName                controllers.QueryController.schema(tableName)
+POST   /schemas                          controllers.QueryController.schemas
+POST   /export_query                     controllers.QueryController.exportQuery()
+GET    /query/:userId/:uuid              controllers.QueryController.query(userId,uuid)
+
+#OpenMemories
+GET    /openMemoriesDataset               controllers.OpenMemoriesController.openMemoriesDataset()                              
+
+
+#Websocket
+#GET     /room                            controllers.RealtimeController.chatRoom(username: Option[String])
+GET    /room/chat                        controllers.RealtimeController.chat(username)
+GET    /assets/javascripts/chatroom.js   controllers.RealtimeController.chatRoomJs(username: String)
+
+
+POST   /bus_real                         controllers.RealtimeController.realtimeBus()
+
+# Map static resources from the /public folder to the /assets URL path
+GET    /assets/*file                     controllers.Assets.at(path="/public", file)
+#GET         /webjars/*file                   controllers.WebJarAssets.at(file)

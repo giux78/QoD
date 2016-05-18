@@ -1,0 +1,49 @@
+10
+
+dir
+0
+http://bigdatasvn.trentorise.eu/svn/trunk/applications/firstSparkApp/app/controllers/helper
+http://bigdatasvn.trentorise.eu/svn
+add
+
+
+
+
+
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+1716a9d9-3804-4d01-a85e-4840b3a9b084
+
+MyUserDAO.scala
+file
+
+
+
+add
+
+PersonalAuth.scala
+file
+
+
+
+add
+
+SparkHelper.scala
+file
+
+
+
+add
+

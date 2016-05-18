@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/286/trunk/applications/firstSparkApp/project
+END
+activator-sbt-echo-play-shim.sbt
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/!svn/ver/286/trunk/applications/firstSparkApp/project/activator-sbt-echo-play-shim.sbt
+END
+build.properties
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/286/trunk/applications/firstSparkApp/project/build.properties
+END
+activator-sbt-eclipse-shim.sbt
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/!svn/ver/286/trunk/applications/firstSparkApp/project/activator-sbt-eclipse-shim.sbt
+END
+activator-sbt-idea-shim.sbt
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/!svn/ver/286/trunk/applications/firstSparkApp/project/activator-sbt-idea-shim.sbt
+END
+plugins.sbt
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/286/trunk/applications/firstSparkApp/project/plugins.sbt
+END

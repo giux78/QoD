@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/286/trunk/applications/firstSparkApp/test
+END
+ApplicationSpec.scala
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/286/trunk/applications/firstSparkApp/test/ApplicationSpec.scala
+END
+IntegrationSpec.scala
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/286/trunk/applications/firstSparkApp/test/IntegrationSpec.scala
+END

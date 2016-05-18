@@ -1,0 +1,191 @@
+$(document).ready(function() {
+	
+	function get_random_color(str) {
+		 var hash = 0;
+		  for(var i=0; i < str.length; i++) {
+		    hash = str.charCodeAt(i) + ((hash << 3) - hash);
+		  }
+		  var color = Math.abs(hash).toString(16).substring(0, 6);
+
+		  return "#" + '000000'.substring(0, 6 - color.length) + color;
+	}
+	
+	  function plotChartWithoutLabel(data) {		    
+		    $.plot($("#all_chart_div #all_chart"), data,
+		        {
+		            series: {
+		                lines: {
+		                    show: true,
+		                    fill: false
+		                },
+		                points: {
+		                    show: true,
+		                    lineWidth: 2,
+		                    fill: true,
+		                    fillColor: "#ffffff",
+		                    symbol: "circle",
+		                    radius: 5
+		                },
+		                shadowSize: 0
+		            },
+		            grid: {
+		                hoverable: true,
+		                clickable: true,
+		                tickColor: "#f9f9f9",
+		                borderWidth: 1,
+		                borderColor: "#eeeeee"
+		            },
+		            colors: ["#79D1CF"],
+		            tooltip: true,
+		            tooltipOpts: {
+		                defaultTheme: false
+		            },
+		            xaxis: {
+		              //  mode: "time"
+		            },
+		            yaxes: [{
+		            }, {
+		                position: "right"
+		            }]
+		        }
+		    ); 
+		} 
+	
+	
+	  function plotChart(dataAndLabel, divIds) {
+		   var colors = [] 
+		   var charts = dataAndLabel.map(function(item){
+		    	data1 = item.data
+		    	label1 = item.label
+		        if (item.color){
+		           colors.push(item.color)	
+		        }
+		    	return {data : data1, label : label1,  lines: { fill: true} }
+		    })
+		    
+		    $.plot($(divIds), charts,
+		        {
+		            series: {
+		                lines: {
+		                    show: true,
+		                    fill: false
+		                },
+		                points: {
+		                    show: true,
+		                    lineWidth: 2,
+		                    fill: true,
+		                    fillColor: "#ffffff",
+		                    symbol: "circle",
+		                    radius: 5
+		                },
+		                shadowSize: 0
+		            },
+		            grid: {
+		                hoverable: true,
+		                clickable: true,
+		                tickColor: "#f9f9f9",
+		                borderWidth: 1,
+		                borderColor: "#eeeeee"
+		            },
+		            colors: colors, // ["#79D1CF"],
+		            tooltip: true,
+		            tooltipOpts: {
+		                defaultTheme: false
+		            },
+		            xaxis: {
+		              //  mode: "time"
+		            },
+		            yaxes: [{
+		            }, {
+		                position: "right"
+		            }]
+		        }
+		    ); 
+		} 
+	
+function attiviPerComune(numeroComune){
+	var attivi_data = [];
+	var dataAndLabel = {}
+	var label = ''
+	$.ajax({
+		url: "./query/543877899080244/22a0063107804a6eaaa3752abcea6905?codice=" + numeroComune,
+		dataType: 'json',
+		async: false,
+		// data: myData,
+		success: function(data) {
+			console.log(data)
+			data.map(function(item){
+				var anno = parseInt(item.anno)
+				var valore = parseInt(item.valore)
+				label = item.descriz
+				attivi_data.push([anno,valore])
+				
+			})
+		//	plotChart(attivi_data, label);          
+		},
+	    error: function(err){
+	    	return []
+	    }
+	})
+	dataAndLabel.data = attivi_data
+	dataAndLabel.label = label
+	dataAndLabel.color = get_random_color(label)
+	return dataAndLabel
+}
+
+function graficoTotale(){
+	$.ajax({
+	//	url: "./query/543877899080244/292f1131090c479e8ea2872cbe8fc582", ./query/543877899080244/075e01059a2d4da79f22c92bb6293381
+		url: "./query/543877899080244/ee052aa245ac4a92a6ca43efb95def4b",
+		dataType: 'json',
+		async: false,
+		// data: myData,
+		success: function(data) {
+		//	console.log(data)
+
+			var arrayComuni = []
+
+			var codComu = _.groupBy(data, function(item){
+			//	return item.comu
+				return item.descriz
+			}) 
+      //      console.log(codComu)
+            for (var i in codComu){
+    			var label = ''
+    		    var datas = {}
+            	annoComu = []
+            	comu = codComu[i]
+            	console.log(comu)
+            	comu.map(function(item){
+            		annoComu.push([parseInt(item.anno),parseInt(item.valore)])
+            		label = item.descriz
+            	})
+            //	arrayComuni.push(annoComu)
+            	
+            	datas.data = annoComu
+            	datas.label = label
+            	datas.color = get_random_color(label)
+            	arrayComuni.push(datas)
+            }
+		//	plotChartWithoutLabel(arrayComuni)
+			plotChart(arrayComuni, "#all_chart_div #all_chart")
+		},
+	    error: function(err){
+	    	return []
+	    }
+	})
+}
+//attiviPerComune("32")
+graficoTotale()
+var data1 = attiviPerComune("32")
+var data2 = attiviPerComune("1")
+var data3 = attiviPerComune("3")
+var data4 = attiviPerComune("4")
+var data5 = attiviPerComune("5")
+var data6 = attiviPerComune("6")
+var data7 = attiviPerComune("7")
+var dataAndLabel = [data1,data2, data3, data4,data5,data6,data7]
+plotChart(dataAndLabel, "#attivi_chart_div #attivi_chart")
+
+
+})

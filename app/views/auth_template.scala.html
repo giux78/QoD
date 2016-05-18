@@ -1,0 +1,172 @@
+@(title: String)(content: Html)
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="ThemeBucket">
+    <link rel="shortcut icon" href="images/favicon.png">
+
+    <title>Horizontal menu page</title>
+
+    <!--Core CSS -->
+    <link href="@routes.Assets.at("admin_template/bs3/css/bootstrap.min.css")" rel="stylesheet">
+    <link href="@routes.Assets.at("admin_template/css/bootstrap-reset.css")" rel="stylesheet">
+    <link href="@routes.Assets.at("admin_template/font-awesome/css/font-awesome.css")" rel="stylesheet" />
+
+    <!-- Custom styles for this template -->
+    <link href="@routes.Assets.at("admin_template/css/style.css")" rel="stylesheet">
+    <link href="@routes.Assets.at("admin_template/css/style-responsive.css")" rel="stylesheet" />
+
+    <!-- Just for debugging purposes. Don't actually copy this line! -->
+    <!--[if lt IE 9]>
+    <script src="js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+  <body class="full-width">
+
+  <section id="container" class="hr-menu">
+      <!--header start-->
+      <header class="header fixed-top">
+          <div class="navbar-header">
+              <button type="button" class="navbar-toggle hr-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                  <span class="fa fa-bars"></span>
+              </button>
+
+              <!--logo start-->
+              <!--logo start-->
+              <div class="brand ">
+                  <a href="index.html" class="logo">
+                      <img src="images/logo.png" alt="">
+                  </a>
+              </div>
+              <!--logo end-->
+              <!--logo end-->
+              <div class="horizontal-menu navbar-collapse collapse ">
+
+              </div>
+
+          </div>
+
+      </header>
+      <!--header end-->
+      <!--sidebar start-->
+
+      <!--sidebar end-->
+      <!--main content start-->
+      <section id="main-content">
+          <section class="wrapper">
+              <!-- page start-->
+
+              <!------>
+              <div class="row">
+                  <div class="col-lg-12">
+                     @content
+                  </div>
+              </div>
+
+              <!-- page end-->
+          </section>
+      </section>
+      <!--main content end-->
+      <!--footer start-->
+      <footer class="footer-section">
+          <div class="text-center">
+              2014 &copy; QOD by Trentino Open Data
+
+          </div>
+      </footer>
+      <!--footer end-->
+  </section>
+
+  <!-- Placed js at the end of the document so the pages load faster -->
+
+  <!--Core js-->
+  <script src="@routes.Assets.at("admin_template/js/jquery.js")"></script>
+  <script src="@routes.Assets.at("admin_template/bs3/js/bootstrap.min.js")"></script>
+  <script type="text/javascript" src="@routes.Assets.at("admin_template/js/hover-dropdown.js")"></script>
+  <script src="@routes.Assets.at("admin_template/js/jQuery-slimScroll-1.3.0/jquery.slimscroll.js")"></script>
+<script src="@routes.Assets.at("admin_template/js/jquery.nicescroll.js")"></script>
+
+
+
+  <!--common script init for all pages-->
+  <script src="@routes.Assets.at("admin_template/js/scripts.js")"></script>
+             <script>
+          $(document).ready(function() {
+        	  $( "#b_login" ).click(function( ) {
+            	   var email = $("#exampleInputEmail1").val()
+            	   var pass  = $("#exampleInputPassword1").val()
+            	   var myData = {}
+            	   myData.email = email
+            	   myData.pass  = pass
+        			$.ajax({
+        				url: './myLoginData',
+        				dataType: 'json',
+        				async: true,
+        			    data: JSON.stringify(myData),
+        			//	data: myData,
+        			    type: "POST",
+        			    contentType:'application/json',
+        				success: function(data) {
+            				console.log(data)
+        				//    alert(data)
+        				
+            				window.location.href = data.ok
+        				},
+        				error: function(data) {
+            				console.log(data)
+        					alert(data)
+        				}
+        			});
+        	  })
+        	  
+        	  $( "#b_registration" ).click(function( ) {
+            	   var email = $("#inputEmail").val()
+            	   var pass  = $("#inputPassword").val()
+            	   var name  = $("#inputName").val()
+            	   var avatar = "http://localhost:9001/assets/images/default.png"
+            	   var surname  = $("#inputSurname").val()
+            	   var company  = $("#inputCompany").val()
+            	   var myData = {}
+            	   myData.email = email
+            	   myData.pass  = pass
+            	   myData.name  = name
+            	   myData.avatar = avatar
+            	   myData.surname  = surname
+            	   myData.company  = company
+        			$.ajax({
+        				url: './mySignUp',
+        				dataType: 'json',
+        				async: true,
+        			    data: JSON.stringify(myData),
+        			//	data: myData,
+        			    type: "POST",
+        			    contentType:'application/json',
+        				success: function(data) {
+            				console.log(data)
+        				//    alert(data)
+        				
+            				window.location.href = data.ok
+        				},
+        				error: function(data) {
+            				console.log(data)
+        					alert(data)
+        				}
+        			});
+        	  })
+        	
+          })
+          </script>
+
+  </body>
+</html>
+

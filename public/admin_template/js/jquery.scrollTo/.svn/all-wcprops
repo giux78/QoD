@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/!svn/ver/286/trunk/applications/firstSparkApp/public/admin_template/js/jquery.scrollTo
+END
+.gitignore
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/!svn/ver/286/trunk/applications/firstSparkApp/public/admin_template/js/jquery.scrollTo/.gitignore
+END
+README.md
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/!svn/ver/286/trunk/applications/firstSparkApp/public/admin_template/js/jquery.scrollTo/README.md
+END
+component.json
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/!svn/ver/286/trunk/applications/firstSparkApp/public/admin_template/js/jquery.scrollTo/component.json
+END
+jquery.scrollTo.min.js
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/!svn/ver/286/trunk/applications/firstSparkApp/public/admin_template/js/jquery.scrollTo/jquery.scrollTo.min.js
+END
+jquery.scrollTo.js
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/!svn/ver/286/trunk/applications/firstSparkApp/public/admin_template/js/jquery.scrollTo/jquery.scrollTo.js
+END

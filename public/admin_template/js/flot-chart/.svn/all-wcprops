@@ -1,0 +1,311 @@
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/!svn/ver/286/trunk/applications/firstSparkApp/public/admin_template/js/flot-chart
+END
+jquery.colorhelpers.min.js
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/!svn/ver/286/trunk/applications/firstSparkApp/public/admin_template/js/flot-chart/jquery.colorhelpers.min.js
+END
+jquery.flot.errorbars.js
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/!svn/ver/286/trunk/applications/firstSparkApp/public/admin_template/js/flot-chart/jquery.flot.errorbars.js
+END
+jquery.flot.stack.js
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/!svn/ver/286/trunk/applications/firstSparkApp/public/admin_template/js/flot-chart/jquery.flot.stack.js
+END
+jquery.flot.tooltip.min.js
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/!svn/ver/286/trunk/applications/firstSparkApp/public/admin_template/js/flot-chart/jquery.flot.tooltip.min.js
+END
+jquery.flot.categories.min.js
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/!svn/ver/286/trunk/applications/firstSparkApp/public/admin_template/js/flot-chart/jquery.flot.categories.min.js
+END
+jquery.flot.crosshair.min.js
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/!svn/ver/286/trunk/applications/firstSparkApp/public/admin_template/js/flot-chart/jquery.flot.crosshair.min.js
+END
+PLUGINS.md
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/!svn/ver/286/trunk/applications/firstSparkApp/public/admin_template/js/flot-chart/PLUGINS.md
+END
+jquery.flot.fillbetween.js
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/!svn/ver/286/trunk/applications/firstSparkApp/public/admin_template/js/flot-chart/jquery.flot.fillbetween.js
+END
+jquery.flot.canvas.min.js
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/!svn/ver/286/trunk/applications/firstSparkApp/public/admin_template/js/flot-chart/jquery.flot.canvas.min.js
+END
+jquery.flot.symbol.min.js
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/!svn/ver/286/trunk/applications/firstSparkApp/public/admin_template/js/flot-chart/jquery.flot.symbol.min.js
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/!svn/ver/286/trunk/applications/firstSparkApp/public/admin_template/js/flot-chart/Makefile
+END
+API.md
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/!svn/ver/286/trunk/applications/firstSparkApp/public/admin_template/js/flot-chart/API.md
+END
+excanvas.js
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/!svn/ver/286/trunk/applications/firstSparkApp/public/admin_template/js/flot-chart/excanvas.js
+END
+FAQ.md
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/!svn/ver/286/trunk/applications/firstSparkApp/public/admin_template/js/flot-chart/FAQ.md
+END
+jquery.flot.image.js
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/!svn/ver/286/trunk/applications/firstSparkApp/public/admin_template/js/flot-chart/jquery.flot.image.js
+END
+jquery.flot.navigate.min.js
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/!svn/ver/286/trunk/applications/firstSparkApp/public/admin_template/js/flot-chart/jquery.flot.navigate.min.js
+END
+jquery.flot.resize.js
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/!svn/ver/286/trunk/applications/firstSparkApp/public/admin_template/js/flot-chart/jquery.flot.resize.js
+END
+NEWS.md
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/!svn/ver/286/trunk/applications/firstSparkApp/public/admin_template/js/flot-chart/NEWS.md
+END
+jquery.flot.spline.js
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/!svn/ver/286/trunk/applications/firstSparkApp/public/admin_template/js/flot-chart/jquery.flot.spline.js
+END
+README.md
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/!svn/ver/286/trunk/applications/firstSparkApp/public/admin_template/js/flot-chart/README.md
+END
+jquery.flot.time.js
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/!svn/ver/286/trunk/applications/firstSparkApp/public/admin_template/js/flot-chart/jquery.flot.time.js
+END
+jquery.flot.animator.min.js
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/!svn/ver/286/trunk/applications/firstSparkApp/public/admin_template/js/flot-chart/jquery.flot.animator.min.js
+END
+jquery.js
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/!svn/ver/286/trunk/applications/firstSparkApp/public/admin_template/js/flot-chart/jquery.js
+END
+jquery.flot.pie.min.js
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/!svn/ver/286/trunk/applications/firstSparkApp/public/admin_template/js/flot-chart/jquery.flot.pie.min.js
+END
+jquery.flot.selection.min.js
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/!svn/ver/286/trunk/applications/firstSparkApp/public/admin_template/js/flot-chart/jquery.flot.selection.min.js
+END
+CONTRIBUTING.md
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/!svn/ver/286/trunk/applications/firstSparkApp/public/admin_template/js/flot-chart/CONTRIBUTING.md
+END
+jquery.flot.threshold.min.js
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/!svn/ver/286/trunk/applications/firstSparkApp/public/admin_template/js/flot-chart/jquery.flot.threshold.min.js
+END
+jquery.flot.js
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/!svn/ver/286/trunk/applications/firstSparkApp/public/admin_template/js/flot-chart/jquery.flot.js
+END
+jquery.flot.errorbars.min.js
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/!svn/ver/286/trunk/applications/firstSparkApp/public/admin_template/js/flot-chart/jquery.flot.errorbars.min.js
+END
+jquery.flot.stack.min.js
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/!svn/ver/286/trunk/applications/firstSparkApp/public/admin_template/js/flot-chart/jquery.flot.stack.min.js
+END
+jquery.flot.fillbetween.min.js
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/!svn/ver/286/trunk/applications/firstSparkApp/public/admin_template/js/flot-chart/jquery.flot.fillbetween.min.js
+END
+LICENSE.txt
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/!svn/ver/286/trunk/applications/firstSparkApp/public/admin_template/js/flot-chart/LICENSE.txt
+END
+jquery.colorhelpers.js
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/!svn/ver/286/trunk/applications/firstSparkApp/public/admin_template/js/flot-chart/jquery.colorhelpers.js
+END
+jquery.flot.growraf.js
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/!svn/ver/286/trunk/applications/firstSparkApp/public/admin_template/js/flot-chart/jquery.flot.growraf.js
+END
+jquery.flot.tooltip.js
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/!svn/ver/286/trunk/applications/firstSparkApp/public/admin_template/js/flot-chart/jquery.flot.tooltip.js
+END
+excanvas.min.js
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/!svn/ver/286/trunk/applications/firstSparkApp/public/admin_template/js/flot-chart/excanvas.min.js
+END
+jquery.flot.categories.js
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/!svn/ver/286/trunk/applications/firstSparkApp/public/admin_template/js/flot-chart/jquery.flot.categories.js
+END
+jquery.flot.crosshair.js
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/!svn/ver/286/trunk/applications/firstSparkApp/public/admin_template/js/flot-chart/jquery.flot.crosshair.js
+END
+jquery.flot.image.min.js
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/!svn/ver/286/trunk/applications/firstSparkApp/public/admin_template/js/flot-chart/jquery.flot.image.min.js
+END
+jquery.flot.canvas.js
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/!svn/ver/286/trunk/applications/firstSparkApp/public/admin_template/js/flot-chart/jquery.flot.canvas.js
+END
+jquery.flot.resize.min.js
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/!svn/ver/286/trunk/applications/firstSparkApp/public/admin_template/js/flot-chart/jquery.flot.resize.min.js
+END
+jquery.flot.symbol.js
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/!svn/ver/286/trunk/applications/firstSparkApp/public/admin_template/js/flot-chart/jquery.flot.symbol.js
+END
+jquery.flot.pie.resize.js
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/!svn/ver/286/trunk/applications/firstSparkApp/public/admin_template/js/flot-chart/jquery.flot.pie.resize.js
+END
+jquery.flot.navigate.js
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/!svn/ver/286/trunk/applications/firstSparkApp/public/admin_template/js/flot-chart/jquery.flot.navigate.js
+END
+jquery.flot.time.min.js
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/!svn/ver/286/trunk/applications/firstSparkApp/public/admin_template/js/flot-chart/jquery.flot.time.min.js
+END
+jquery.min.js
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/!svn/ver/286/trunk/applications/firstSparkApp/public/admin_template/js/flot-chart/jquery.min.js
+END
+jquery.flot.min.js
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/!svn/ver/286/trunk/applications/firstSparkApp/public/admin_template/js/flot-chart/jquery.flot.min.js
+END
+jquery.flot.animator.js
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/!svn/ver/286/trunk/applications/firstSparkApp/public/admin_template/js/flot-chart/jquery.flot.animator.js
+END
+jquery.flot.pie.js
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/!svn/ver/286/trunk/applications/firstSparkApp/public/admin_template/js/flot-chart/jquery.flot.pie.js
+END
+jquery.flot.selection.js
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/!svn/ver/286/trunk/applications/firstSparkApp/public/admin_template/js/flot-chart/jquery.flot.selection.js
+END
+jquery.flot.threshold.js
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/!svn/ver/286/trunk/applications/firstSparkApp/public/admin_template/js/flot-chart/jquery.flot.threshold.js
+END
